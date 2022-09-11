@@ -1,0 +1,564 @@
+@font-face {
+    font-family: escapevelocityhalf;
+    src: url("ALLFonts/escapevelocity.ttf");
+}
+@font-face {
+    font-family: Lokeya;
+    src: url("ALLFonts/Game Of Squids.ttf");
+}
+@font-face {
+    font-family: RobotoCondensed;
+    src: url("RobotoCondensed-Regular.ttf");
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px)  {
+    body{
+        background-color: #202020;
+    }
+    header{
+        width: 100vw;
+        height: 50px;
+        background-color: #202020;
+        color: white;
+        position: fixed;
+        border-bottom: 1px solid white;
+        z-index: 10;
+    }
+    .cont{
+        width: auto;
+        margin-right: 10px;
+    }
+    #navbar{
+        width:100%;
+        height: 100%;
+        display:flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: start;
+        padding-left: 0;
+    }
+    .options{
+        width:100%;
+        height: 100%;
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: start;
+        padding: 10px 10px 10px 20px;
+    }
+    .xyz1{
+        font-size: 16px;
+        text-decoration: none;
+        color: white;
+        font-family: Lokeya;
+        transition: 0.2s;
+        letter-spacing: 1px;
+        cursor: pointer;
+    }
+    li{
+        list-style-type: none;
+        color: white;
+        padding: 10px;
+    }
+    a:hover{
+        color: #E11C2A;
+        border-bottom: 2px solid #E11C2A;
+        font-weight:bold;
+    }
+    a::after{
+        color: #E11C2A;
+        border-bottom: 2px solid #E11C2A;
+        font-weight:bold;
+    }
+    a:active{
+        color: #E11C2A;
+        border-bottom: 2px solid #E11C2A;
+        font-weight:bold;
+    }
+    .cont{
+        padding: 10px;
+    }
+    h1{
+        font-size: 25px;
+    }
+    h3{
+    font-size: 15px;
+    }
+    h4{
+        cursor: pointer;
+        color: #E11C2A;
+        font-family: escapevelocityhalf;
+    }
+    h4 span{
+        cursor: pointer;
+        color: white;
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0;
+    }
+    #HomePage{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #contentHome{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .group{
+        width: 400px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap:7px;
+        margin-top: 10px;
+        letter-spacing: 2px;
+    }
+    
+    h1 span{
+        color: crimson;
+    }
+    button{
+        font-size: 16px;
+        background-color: crimson;
+        padding: 6px;
+        border-radius: 4px;
+        margin-top: 10px;
+        cursor: pointer;
+        transition: 0.3s;
+        border: 2px solid crimson;
+        letter-spacing: 1.5px;
+    }
+    button:hover{
+        background-color: transparent;
+        border: 2px solid crimson;
+        font-weight: bold;
+    }
+    
+    #pht{
+        width: 100%;
+        height: 100%;
+        padding-left: 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        /* border: 1px solid white; */
+    }
+    .photo{
+        display: block;
+        margin: 0 auto;
+        width: auto;
+        height: auto;
+        padding: 10px;
+    }
+    #photoMe{
+        margin-top: 0;
+        width: 300px;
+        height: 300px;
+        z-index: 2;
+        margin-left: 40px;
+        box-shadow: rgba(97, 96, 96, 0.4) 0px 2px 4px,
+        rgba(97, 96, 96, 0.3) 0px 7px 13px -3px,
+        rgba(97, 96, 96, 0.2) 0px -3px 0px inset;
+        border-radius: 10%;
+    }
+    .front{
+        display: none;
+    }
+    .back{
+        display: none;
+    }
+    #dotted{
+        display: none;
+    }
+    #AboutMePage{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        padding-top: 30px;
+    }
+    #titl{
+        letter-spacing: 2.5px;
+        font-size: 45px;
+        font-style: normal;
+        text-align: center;
+        text-decoration: dashed;
+        color: #E11C2A;
+    }
+    #boxabout{
+        width: 40%;
+        height: 5px;
+        background-color: #E11C2A;
+    }
+    #contentAbout{
+        padding-top: 20px;
+        height: auto;
+        width: 90%;
+        letter-spacing: 2.5px;
+        text-align: center;
+    }
+    #EducationPage{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+    #school{
+        display: none;
+    }
+   .containeduc{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 30px;
+    align-items: start;
+    text-align: end;
+    padding-left: 10px;
+   }
+    #nameSchool{
+    display: none;
+    }
+    #boxabout1{
+        height: 5px;
+        width: 100px;
+        background-color: #E11C2A;
+        margin-left: 60px;
+    }
+    #educTitle{
+        width: auto;
+        height: 100%;
+        text-align: center;
+    }
+    #titleEDC{
+        font-size: 45px;
+        color: #E11C2A;
+        letter-spacing: 2.5px;
+    }
+    .pictitle{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    #pic3{
+        width: 80px;
+        height: 80px;
+        background-image: url(icons/Picture3.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #SkillsPage{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+    #titl1{
+        color: #E11C2A;
+        font-size: 45px;
+        letter-spacing: 3px;
+        font-weight: bolder;
+    }
+    #pic1{
+        width: 80px;
+        height: 80px;
+        background-image: url(icons/Picture1.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .picskills{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    .contentskills{
+        display: none;
+    }
+    .divsn{
+        display: none;
+    }
+    .contentskills1{
+        width: 300px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        align-items: center;
+        justify-content: center;
+        /* border: 1px solid white; */
+        position: relative;
+    }
+    .skillscont{
+        /* border: 1px solid wheat; */
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        align-items: start;
+        justify-content: center;
+    }
+    #skillbar{
+        width: 300px;
+        height: 15px;
+        background-color: #767676;
+        border-radius: 3px;
+        
+        
+    }
+    .levelbar{
+    width: 0;
+        height: 11px;
+        background-color: #e11c29d7;
+        border-radius: 3px;
+        padding: 2px 0;
+        color: white;
+        text-align: center;
+        padding: px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: end;
+    }
+    h5{
+        color: #ffffffd7;
+        text-shadow: 0px 0.5px 3px rgb(0, 0, 0);
+    }
+    /*/********************************/
+    
+    #ContactPage{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+    }
+    .forSocialMedia{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        align-items: center;
+        justify-content: center;
+    }
+    .forGmail{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        align-items: start;
+        justify-content: space-around;
+        padding: 3px;
+    }
+    #form{
+        right: 0;
+        width: 50%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        align-items: center;
+        justify-content: start;
+        padding: 10px;
+        padding-left: 30px;
+        margin: 20px auto;
+        border: 2px dotted #e11c29d7;
+    }
+    .field1{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        align-items: center;
+        justify-content: start;
+    }
+    .field {
+        margin-bottom: 10px;
+    }
+    .field label {
+        display: block;
+        font-size: 16px;
+        color: rgb(247, 68, 68);
+        text-shadow: 0px 0px 2px rgb(121, 117, 117);
+    }
+    
+    input[type="submit"] {
+        display: block;
+        padding: 6px 30px;
+        font-size: 12px;
+        background-color: #e11c29d7;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-left: auto;
+        font-weight: bolder;
+        letter-spacing: 1px;
+    }
+    input[type="submit"]:hover {
+        color: #ffffffd7;
+        background-color: #202020;
+        border: 1px solid #e11c29d7;
+        font-weight: bolder;
+    }
+    input[type="text"]{
+        border: 1px solid white;
+        border-radius: 3px;
+        background-color: #202020;
+        padding: 2px;
+        width: 220px;
+    }
+    textarea{
+        border: 1px solid white;
+        border-radius: 3px;
+        background-color: #202020;
+        padding: 2px;
+        width: 220px;
+        height: 80px;
+    }
+    #msgcaption{
+        color: #4ae11c;
+        font-size: 18px;
+        margin-left: auto;
+        letter-spacing: 0.6px;
+    }
+.content{
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    /* border: 1px solid white; */
+}
+.gmls{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: canter;
+    gap: 3px;
+}
+#pic2{
+    width: 40px;
+    height: 40px;
+    background-image: url(icons/Picture2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#xyz{
+    font-family:'Lucida Grande', sans-serif;
+    letter-spacing: 0.5px;
+}
+.fb{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: canter;
+    gap: 3px;
+    padding-bottom: 8px;
+}
+.fbimg{
+    width: 25px;
+    height: 25px;
+    background-image: url(icons/Picture5.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.tg{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: canter;
+    gap: 3px;
+    padding-bottom: 8px;
+}
+.tgimg{
+    width: 25px;
+    height: 25px;
+    background-image: url(icons/Picture6.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pnum{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4px;
+    padding-bottom: 8px;
+}
+.pnimg{
+    width: 25px;
+    height: 25px;
+    background-image: url(icons/Picture4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pictitle{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+}
+#pic3{
+    border-radius: 8px;
+    background: #C01809;
+    width: 100px;
+    height: 100px;
+    background-image: url(icons/Picture3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 15px;
+}
+#pic1{
+    border-radius: 8px;
+    background: #E4180F;
+    width: 100px;
+    height: 100px;
+    background-image: url(icons/Picture1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.picskills{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.piccontack{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+#pic4{
+    border-radius: 8px;
+    background: #FF1A00;
+    width: 80px;
+    height: 80px;
+    background-image: url(icons/Picture4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+}
